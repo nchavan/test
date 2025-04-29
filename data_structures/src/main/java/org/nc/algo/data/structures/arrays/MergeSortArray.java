@@ -3,7 +3,7 @@ package org.nc.algo.data.structures.arrays;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-public class MergeSortedArray {
+public class MergeSortArray {
 
     public int[] mergeSortedArraySwitchingElementsReduceSpace(int[] array1, int[] array2) {
 

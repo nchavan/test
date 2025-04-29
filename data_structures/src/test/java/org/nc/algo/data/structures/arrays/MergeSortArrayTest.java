@@ -7,12 +7,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-class MergeSortedArrayTest {
+class MergeSortArrayTest {
 
     @ParameterizedTest
     @MethodSource("provideMergeArrays")
     public void mergeSortedArrays(int[] arr1, int[] arr2, int[] exp) {
-        MergeSortedArray mergeSortedArray = new MergeSortedArray();
+        MergeSortArray mergeSortedArray = new MergeSortArray();
         int[] output = mergeSortedArray.mergeSortedArray(arr1, arr2);
         Assertions.assertThat(output)
                 .contains(exp);
@@ -22,7 +22,7 @@ class MergeSortedArrayTest {
     @ParameterizedTest
     @MethodSource("provideMergeArrays")
     public void mergeSortedArrays1(int[] arr1, int[] arr2, int[] exp) {
-        MergeSortedArray mergeSortedArray = new MergeSortedArray();
+        MergeSortArray mergeSortedArray = new MergeSortArray();
         int[] output = mergeSortedArray.mergeSortedArraySwitchingElementsReduceSpace(arr1, arr2);
         Assertions.assertThat(output)
                 .contains(exp);
@@ -32,7 +32,7 @@ class MergeSortedArrayTest {
     @ParameterizedTest
     @MethodSource("provideMergeArrays")
     public void mergeSortedArraysUsingStreams(int[] arr1, int[] arr2, int[] exp) {
-        MergeSortedArray mergeSortedArray = new MergeSortedArray();
+        MergeSortArray mergeSortedArray = new MergeSortArray();
         int[] output = mergeSortedArray.mergeArraysUsingStreams(arr1, arr2);
         Assertions.assertThat(output)
                 .contains(exp);
